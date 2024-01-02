@@ -1,0 +1,95 @@
+:root {
+    font-size: 20px;
+    box-sizing: inherit;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  p {
+    margin: 0;
+  }
+  
+  p:not(:last-child) {
+    margin-bottom: 1.5em;
+  }
+
+:root{
+  --marigold: hsl(42, 99%, 46%);
+}
+  body {
+    font: 1em/1.618 Inter, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 30px;
+    color: #224;
+    background: url(../images/photo-1618005182384-a83a8bd57fbe.jpeg) center/cover no-repeat fixed;
+  }
+
+  body::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .card {
+    /* max-width: 300px; */
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* max-width: 500px; */
+    /* height: 300px; */
+    padding: 35px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 20px;
+    background-color: hsla(0, 0%, 100%, 0.45);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(15px);
+  }
+  
+  .card-footer {
+    font-size: 0.65em;
+    color: #446;
+  }
+
+  .title{
+    color: rgb(0, 0, 0);
+    /* justify-content: center; */
+    text-align: center;
+  }
+
+  .btn {
+    background-color: rgba(255, 255, 255, 0.5); /* White with 50% transparency */
+    background-image: url('frost-texture.png'); /* Replace with your own frosty texture */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #555;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+  }
+  
+  .btn:hover {
+    background-color: rgba(255, 255, 255, 0.8); /* White with 80% transparency */
+    color: #333;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+  }
+  
+  .btn:active {
+    background-color: rgba(255, 255, 255, 0.3); /* White with 30% transparency */
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.2);
+    transform: translateY(2px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
